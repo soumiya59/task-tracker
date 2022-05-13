@@ -1,4 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: rgb(42, 41, 41);
+
+}
+
+.header{
+  text-shadow:0.05em 0.02em 0 rgb(178, 118, 224),
+            0.075em 0.075em 0 rgb(23, 14, 51),
+            0.1em 0.1em 0 rgb(167, 141, 202); 
+  /* color: rgb(97, 49, 143); */
+}
+.tweet{
+  border: 2px solid rgb(148, 122, 166);
+  /* padding: 1.2rem 2rem; */
+}
+.task_input{
+  text-align: center;
+  margin-bottom: 5%;
+}
+#input{
+  width: 80%;
+  max-width: 880px;
+  height: 49px;
+  font-size: 1.6rem;
+  padding-left: 2%;
+  font-weight: 200;
+}
+.app{
+  min-height: 100vh;
+  background-color: rgb(204, 188, 243);
+}
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -109,4 +151,4 @@ body {
 footer {
   margin-top: 30px;
   text-align: center;
-}
+} */

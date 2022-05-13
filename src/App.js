@@ -1,35 +1,22 @@
-import Header from './components/Header'
-import Tasks from './components/Tasks';
-import { useState } from "react"
+import './index.css'
+import Tweet from './Tweet';
+import Task from './Input';
+
 
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-        id: 1,
-        text: 'Doctors Appointment',
-        day: 'Feb 5th at 2:30pm',
-        reminder: true, 
-    },
-    {
-        id: 2,
-        text: 'Meeting at school',
-        day: 'Feb 6th at 2:30pm',
-        reminder: true, 
-    },
-    {
-        id: 3,
-        text: 'Shopping',
-        day: 'Feb 7th at 2:30pm',
-        reminder: false, 
-    }
-])
   return (
-    <div className="container">
-      <Header />
-      <Tasks tasks={tasks}/>
+    <div className='app'>
+      <h1 className='header p-5 text-center fw-bold'>Task Tracker</h1>
+      <Task />
+      <Tweet date='friday the 7th' todo='do the dishes' />
+      <Tweet date='friday the 8th' todo='shopping'/>
+      <Tweet date='friday the 9th' todo='date night'/>
     </div>
   );
 }
+
+// delete task
+
 
 export default App;
